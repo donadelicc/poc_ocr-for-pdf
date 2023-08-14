@@ -1,4 +1,4 @@
-# Proof of Cocept for digitalisering av PDF-er
+# Proof of Concept for digitalisering av PDF-er
 An OCR program using Tesseract for the web prompts the user for a scanned PDF and returns a fully digitalized PDF. 
 
 ## Innstalasjon
