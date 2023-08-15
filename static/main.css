@@ -5,8 +5,6 @@ html, body {
 }
 
 .header {
-    padding: 20px;
-    margin: 20px;
     text-align: center;
     height: 200px;
 }
@@ -14,6 +12,12 @@ html, body {
 h1, h2 {
     color: #150EA1;
     font-size: 50px;
+}
+
+.description {
+    text-align: center;
+    font-size: 20px;
+    color: #150EA1;
 }
 
 .main-container {
@@ -50,7 +54,6 @@ h1, h2 {
 }
 
 .file-label {
-    padding: 20px;
     background-color: #F1D1CA;
     display: inline-block;
     cursor: pointer;   /* endre musepeker til håndikon for å indikere klikkbarhet */
@@ -63,7 +66,6 @@ h1, h2 {
 
 .loading {
     padding: 20px;
-    margin: 20px;
     font-size: 20px;
     background-color: #F1D1CA;
     border-radius: 10px;
@@ -111,4 +113,8 @@ h1, h2 {
     height: 1300px;
     display:none;
     overflow: auto;
+}
+
+p {
+    color: #150EA1;
 }
