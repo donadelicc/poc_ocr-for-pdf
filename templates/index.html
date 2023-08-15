@@ -32,8 +32,7 @@ $(document).ready(function() {
         
         let formData = new FormData(this);
         let statusmsg = 'Loading...'
-        $('.loading').text(statusmsg);
-        $('.loading').show();
+        $('.main-container span').text(statusmsg);
 
         $.ajax({
             url: '/',
@@ -43,7 +42,7 @@ $(document).ready(function() {
                 if (data.filename) {
 
                     // Skjul loading melding
-                    $('.loading').hide();
+                    $('.main-container span').hide();
 
                     $('.output-container').show();
                     // Vis PDF i iframe
@@ -78,9 +77,8 @@ $(document).ready(function() {
             <label for="file-input" class="file-label">Velg en fil</label>
             <input class="button" type="submit" value="Konverter og digitaliser PDF">
         </form>
-    
+        <span class="loading"></span>
         <div class="output-container">
-            <div class="loading" style="display: none;"><p></p></div>
             <div class="message-box" id="messageBox"></div>
             <iframe id="pdfViewer"></iframe>
         </div>
