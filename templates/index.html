@@ -31,15 +31,19 @@ $(document).ready(function() {
         event.preventDefault();
         
         let formData = new FormData(this);
+        let statusmsg = 'Loading...'
+        $('.loading').text(statusmsg);
+        $('.loading').show();
 
-        
-        
         $.ajax({
             url: '/',
             type: 'POST',
             data: formData,
             success: function(data) {
                 if (data.filename) {
+
+                    // Skjul loading melding
+                    $('.loading').hide();
 
                     $('.output-container').show();
                     // Vis PDF i iframe
@@ -76,6 +80,7 @@ $(document).ready(function() {
         </form>
     
         <div class="output-container">
+            <div class="loading" style="display: none;"><p></p></div>
             <div class="message-box" id="messageBox"></div>
             <iframe id="pdfViewer"></iframe>
         </div>

@@ -5,11 +5,10 @@ import os
 from fpdf import FPDF
 import glob
 
-
 app = Flask(__name__, static_folder='static')
 
-UPLOAD_FOLDER = './uploads'
-IMAGE_DIR = './document_pages'
+UPLOAD_FOLDER = '/home/donadelicc/mysite/uploads'
+IMAGE_DIR = '/home/donadelicc/mysite/document_pages'
 TXT_DIR = IMAGE_DIR
 
 for folder in [UPLOAD_FOLDER, IMAGE_DIR, TXT_DIR]:

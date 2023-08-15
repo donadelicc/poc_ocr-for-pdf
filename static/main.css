@@ -60,6 +60,15 @@ h1, h2 {
     background-color: #FDF2ED;
 }
 
+.loading {
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    background-color: #F1D1CA;
+    border-radius: 10px;
+    text-align: center;
+}
+
 
 .output-container {
     padding: 20px;
